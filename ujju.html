@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    // Device detection logic
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      // Redirect to Google Play Store
+      window.location.href = "https://play.google.com/store/apps/details?id=com.arganicz.userapps";
+    } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+      // Redirect to Apple App Store
+      window.location.href = "https://apps.apple.com/in/app/arganicz/id6504496536";
+    } else {
+      // Redirect to fallback page or homepage
+      window.location.href = "https://www.arganicz.com/";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to your app store...</p>
+</body>
+</html>
